@@ -61,10 +61,23 @@ class Dataset(BaseDataset):
             # difference between values and forms in these mock datasets, we
             # use the raw value for both fields.
             for entry in reader:
-                args.writer.add_form(
-                    Language_ID=languages[entry["Language"]],
-                    Parameter_ID=concepts[entry["Concept"]],
-                    Value=entry["Value"],
-                    Form=entry["Value"],
-                    Source=["Dellert2017"],
-                )
+                # If the segments are given in the raw source, hand-coded,
+                # make a list out of them and call the appropriate function;
+                # otherwise, call the default ones that accepts no segments.
+                if entry['Segments']:
+                    args.writer.add_form_with_segments(
+                        Language_ID=languages[entry["Language"]],
+                        Parameter_ID=concepts[entry["Concept"]],
+                        Value=entry["Value"],
+                        Form=entry["Value"],
+                        Segments=entry['Segments'].split(),
+                        Source=["Dellert2017"],
+                    )
+                else:
+                    args.writer.add_form(
+                        Language_ID=languages[entry["Language"]],
+                        Parameter_ID=concepts[entry["Concept"]],
+                        Value=entry["Value"],
+                        Form=entry["Value"],
+                        Source=["Dellert2017"],
+                    )

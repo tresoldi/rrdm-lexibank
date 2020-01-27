@@ -1,17 +1,17 @@
-Language,Concept,Value
-Ket,Ski::N,асьлеӈ
-Ket,zwanzig::NUM,эʼк
-Ket,Bein::N,буль
-Ket,jetzt::ADV,ень
-Nganasan,Ski::N,тутә
-Nganasan,zwanzig::NUM,ситібииˮ
-Nganasan,Bein::N,ӈой
-Nganasan,jetzt::ADV,тахариа
-Tatar,Ski::N,чаңгы
-Tatar,zwanzig::NUM,егерме
-Tatar,Bein::N,аяк
-Tatar,jetzt::ADV,хәзер
-Lule Sami,Ski::N,sabek
-Lule Sami,zwanzig::NUM,guoktalåhke
-Lule Sami,Bein::N,juolgge
-Lule Sami,jetzt::ADV,dal
+Language,Concept,Value,Segments
+Ket,Ski::N,асьлеӈ,
+Ket,zwanzig::NUM,эʼк,
+Ket,Bein::N,буль,
+Ket,jetzt::ADV,ень,
+Nganasan,Ski::N,тутә,
+Nganasan,zwanzig::NUM,ситібииˮ,
+Nganasan,Bein::N,ӈой,
+Nganasan,jetzt::ADV,тахариа,
+Tatar,Ski::N,чаңгы,
+Tatar,zwanzig::NUM,егерме,
+Tatar,Bein::N,аяк,
+Tatar,jetzt::ADV,хәзер,
+Lule Sami,Ski::N,sabek,
+Lule Sami,zwanzig::NUM,guoktalåhke,
+Lule Sami,Bein::N,juolgge,
+Lule Sami,jetzt::ADV,dal,
